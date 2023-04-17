@@ -1,6 +1,9 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue'
+import Next from './components/Next.vue'
+import Second from './components/Second.vue'
+
 </script>
 
 <template>
@@ -8,14 +11,15 @@ import Home from './components/Home.vue'
     <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <HelloWorld msg="VueJS Practice" />
+      <HelloWorld msg="VueJS Practice "/>
 
     </div>
   </header>
 
   <main>
-    <Home msg="Daniyal"/>
-
+    <!-- <Home msg="Daniyal"/> -->
+    <!-- <Next/> -->
+    <Second />
   </main>
 </template>
 
