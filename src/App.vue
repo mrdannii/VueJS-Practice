@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue'
 import Next from './components/Next.vue'
 import Second from './components/Second.vue'
+import Third from './components/Third.vue'
 
 </script>
 
@@ -12,17 +13,35 @@ import Second from './components/Second.vue'
 
     <div class="wrapper">
       <HelloWorld msg="VueJS Practice "/>
+      <button v-on:click="show = !show"> Third</button>
 
     </div>
   </header>
 
   <main>
     <!-- <Home msg="Daniyal"/> -->
-    <!-- <Next/> -->
-    <Second />
+    <Next/>
+    <!-- <Second /> -->
+    <Third v-if="show" msg="hehe"/>
+
+
+
   </main>
 </template>
 
+<script>
+export default {
+    data() {
+        return {
+            show: true,
+            
+        }
+    },
+    methods: {
+
+    }
+}
+</script>
 <!-- <style scoped>
 header {
   line-height: 1.5;
