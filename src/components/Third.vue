@@ -1,5 +1,4 @@
 <script setup>
-    import Next from './Next.vue'
 
     defineProps({
         msg: {
@@ -12,14 +11,15 @@
 
     </script>
 <template>
-    <h1> Third Component {{ msg }}</h1>
-    <Next/>
-    
+    <h1 :class="{ change:color }"> Third Component {{ msg }}</h1>
+    <button v-on:click="color=!color">change info</button>
+
 </template>
 <script> 
 export default {
     data() {
-        return {            
+        return {       
+            color:false     
         }
     },
     methods: {
@@ -27,3 +27,9 @@ export default {
     }
 }
 </script>
+
+<style>
+.change{
+    color: wheat;
+}
+</style>

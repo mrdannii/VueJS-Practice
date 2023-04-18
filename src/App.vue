@@ -20,7 +20,7 @@ import Third from './components/Third.vue'
 
   <main>
     <!-- <Home msg="Daniyal"/> -->
-    <Next/>
+    <!-- <Next/> -->
     <!-- <Second /> -->
     <Third v-if="show" msg="hehe"/>
 
