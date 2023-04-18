@@ -10,6 +10,7 @@ import Form from './components/Form.vue'
 import Watchers from './components/Watchers.vue'
 import State from './components/State.vue'
 import Maincheck from './components/Maincheck.vue'
+import Apicalling from './components/Apicalling.vue'
 
 </script>
 
@@ -39,7 +40,8 @@ import Maincheck from './components/Maincheck.vue'
     <a href=""> check</a>
     </ChildSlot> -->
     <!-- <State/> -->
-    <Maincheck/>
+    <!-- <Maincheck/>  -->
+    <Apicalling/>
   </main>
 </template>
 
