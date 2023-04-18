@@ -4,6 +4,8 @@ import Home from './components/Home.vue'
 import Next from './components/Next.vue'
 import Second from './components/Second.vue'
 import Third from './components/Third.vue'
+import Child from './components/child.vue'
+import Form from './components/Form.vue'
 
 </script>
 
@@ -12,8 +14,8 @@ import Third from './components/Third.vue'
     <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <HelloWorld msg="VueJS Practice "/>
-      <button v-on:click="show = !show"> Third</button>
+      <!-- <HelloWorld msg="VueJS Practice " /> -->
+      <!-- <button v-on:click="show = !show"> Third</button> -->
 
     </div>
   </header>
@@ -22,24 +24,26 @@ import Third from './components/Third.vue'
     <!-- <Home msg="Daniyal"/> -->
     <!-- <Next/> -->
     <!-- <Second /> -->
-    <Third v-if="show" msg="hehe"/>
-
-
+    <!-- <Third v-if="show" msg="hehe"/> -->
+    <!-- <Child :get-usern="getUserN" /> -->
+    <Form />
 
   </main>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            show: true,
-            
-        }
-    },
-    methods: {
+  data() {
+    return {
+      show: true,
 
     }
+  },
+  methods: {
+    getUserN(uam) {
+      alert(uam)
+    }
+  }
 }
 </script>
 <!-- <style scoped>
