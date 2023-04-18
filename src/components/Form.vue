@@ -13,7 +13,7 @@ defineProps({
     
     <form action="">
         <label for="email">Email : </label>
-        <input type="email" name="email" id="email" v-model="form.email">
+        <input type="email" name="email" id="email" v-model.lazy="form.email">
         <br>
         <label for="password">Password : </label>
         <input type="password" name="password" id="password" v-model="form.pass">
